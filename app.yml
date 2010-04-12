@@ -1,0 +1,21 @@
+application: ringio-jp
+version: 2
+runtime: python
+api_version: 1
+
+handlers:
+- url: /Todo.swf
+  static_files: Todo.swf
+  upload: Todo.swf
+
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+
+- url: /images
+  static_dir: images
+
+- url: /.*
+  script: main.py
